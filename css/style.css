@@ -1,0 +1,921 @@
+/* Global reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    overflow-x: hidden !important;
+    width: 100% !important;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0078B7;
+    color: #333;
+}
+
+/* Navbar */
+/* ===== Header Style ===== */
+.main-header {
+    background: #0078B7;
+    /* Primary Blue */
+}
+
+/* ===== Navbar Style ===== */
+.navbar .nav-link {
+    position: relative;
+    transition: 0.3s;
+}
+
+.navbar .nav-link.active {
+    color: #00A8E8 !important;
+    /* Accent Blue */
+}
+
+.navbar .nav-link.active::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #00A8E8;
+    /* Accent underline */
+    border-radius: 5px;
+}
+
+.custom-navbar {
+    background-color: #005F8C !important;
+    /* Darker blue for top bar */
+    padding: 15px 0;
+    transition: all 0.3s ease-in-out;
+    border-bottom: 1px solid rgba(0, 168, 232, 0.25);
+}
+
+/* ===== Scroll Effect ===== */
+.custom-navbar.shrink {
+    padding: 5px 0;
+    background-color: #004A6B !important;
+    /* Deeper blue on scroll */
+    box-shadow: 0 0 20px rgba(0, 168, 232, 0.4);
+}
+
+/* ===== Logo Text ===== */
+.brand-text {
+    line-height: 1;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color: #ffffff;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+/* ===== Navbar Links ===== */
+.navbar-nav .nav-link {
+    color: #ffffff !important;
+    font-weight: 500;
+    position: relative;
+    transition: 0.3s;
+}
+
+/* Hover Underline Effect */
+.navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0%;
+    height: 2px;
+    background-color: #3BB273;
+    /* Healthcare green accent */
+    transition: width 0.3s;
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #00A8E8 !important;
+}
+
+/* ===== Button Style ===== */
+.btn-outline-light {
+    border-width: 2px;
+    border-color: #00A8E8 !important;
+    color: #ffffff !important;
+}
+
+.btn-outline-light:hover {
+    background-color: #00A8E8;
+    border-color: #00A8E8;
+    color: #ffffff !important;
+    transition: 0.3s;
+}
+
+/* ===== Mobile Responsive ===== */
+@media (max-width: 992px) {
+    .navbar-nav {
+        text-align: center;
+        margin-top: 15px;
+    }
+}
+
+/* Hero section */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 3rem 0;
+    background-image: linear-gradient(90deg, rgba(0, 120, 183, 0.95) 50%, rgba(255, 255, 255, 0) 50%), url('../assets/images/Hero-Medical.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 95, 140, 0.75);
+    z-index: 1;
+}
+
+.hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-content {
+    color: #ffffff;
+    padding: 2rem 1rem;
+}
+
+.tagline {
+    color: #00A8E8;
+    font-size: 1.1rem;
+    display: inline-flex;
+    align-items: center;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    line-height: 1.05;
+}
+
+.hero-content h1 span {
+    color: #3BB273;
+}
+
+.hero-image img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: .6rem;
+    border: 4px solid rgba(0, 168, 232, 0.25);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
+    position: relative;
+    left: 25px;
+    top: 51px;
+}
+
+/* Hero Logo Control */
+.hero-logo {
+    width: 250px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transform: translateX(-71px) translateY(75px);
+}
+
+/* Buttons */
+.btn-info {
+    background-color: #0078B7 !important;
+    /* Primary Blue */
+    border-color: #00A8E8 !important;
+    /* Lighter Accent Blue */
+    color: #EAF2F7;
+}
+
+.btn-info:hover {
+    background-color: #005F8C !important;
+    /* Darker hover blue */
+    border-color: #005F8C !important;
+    color: #ffffff;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-outline-info {
+    color: #00A8E8 !important;
+    border-color: #00A8E8 !important;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-outline-info:hover {
+    background-color: #00A8E8;
+    color: #ffffff !important;
+}
+
+/* About Section */
+.about-aura-steel {
+    background-color: #F8FAFC;
+    /* Light medical background */
+    color: #1E1E1E;
+    /* Dark text for readability */
+    padding: 6rem 0;
+}
+
+/* Section Heading */
+.about-heading {
+    position: relative;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+.about-heading h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #0078B7;
+    /* Primary Blue */
+}
+
+.about-heading h2 span {
+    color: #3BB273;
+    /* Healthcare Green */
+}
+
+.about-heading::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: #00A8E8;
+    /* Accent Blue */
+}
+
+/* Image Styling */
+.aura-image {
+    border-radius: 12px;
+    box-shadow: 0 0 0 3px rgba(0, 168, 232, 0.25), 0 6px 20px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Our Story Text */
+.our-story h3 {
+    color: #0078B7;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.our-story p {
+    line-height: 1.75;
+    margin-bottom: 1.2rem;
+    opacity: 0.9;
+    color: #1E1E1E;
+}
+
+/* Core Values Cards */
+.value-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    border: 1px solid rgba(0, 168, 232, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 120, 183, 0.08);
+}
+
+.value-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 168, 232, 0.25);
+    border: 1px solid #00A8E8;
+    transition: all 1s ease;
+
+}
+
+.value-card .bi {
+    font-size: 2.2rem;
+    color: #3BB273;
+    /* Green accent for icons */
+    margin-bottom: 1.2rem;
+}
+
+.value-card h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #0078B7;
+}
+
+.value-card p {
+    font-size: 0.95rem;
+    opacity: 0.85;
+    color: #333;
+}
+
+/* Scroll Animation */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(25px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.animate-on-scroll.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .hero {
+        background-image: url('../assets/images/Hero-Medical.jpg');
+        padding: 4rem 0;
+    }
+
+    .hero-content h1 {
+        font-size: 2.6rem;
+    }
+
+    .hero-image img {
+        position: absolute;
+        opacity: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+}
+
+/* =========================================== */
+/* Vision, Mission & Goals Section */
+.vision-mission-goals {
+    background-color: rgb(243, 243, 243);
+    /* Light, clean medical background */
+    color: #1E1E1E;
+    padding: 6rem 0;
+}
+
+/* Vision / Mission / Goals Card */
+.vmg-card {
+    background-color: #ffffff;
+    /* White cards for contrast */
+    padding: 2.5rem;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 168, 232, 0.25);
+    /* Subtle accent border */
+    box-shadow: 0 4px 12px rgba(0, 120, 183, 0.08);
+}
+
+/* Hover Effect */
+.vmg-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(0, 168, 232, 0.7);
+    box-shadow: 0 8px 20px rgba(0, 120, 183, 0.2);
+    transition: transform 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
+
+}
+
+/* Card Heading (icon + title) */
+.card-heading {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.card-icon {
+    color: #3BB273;
+    /* Green healthcare accent */
+    font-size: 1.8rem;
+    margin-right: 0.8rem;
+}
+
+.card-heading h3 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #0078B7;
+    /* Primary Blue */
+}
+
+.card-heading h3 span {
+    color: #00A8E8;
+    /* Accent Blue */
+}
+
+/* Paragraphs inside cards */
+.vmg-card p {
+    opacity: 0.9;
+    line-height: 1.75;
+    font-size: 1rem;
+    color: #333333;
+    margin-bottom: 1rem;
+}
+
+/* Scroll Animation */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s cubic-bezier(0.34, 1.56, 0.64, 1),
+        transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.animate-on-scroll.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 575px) {
+    .vision-mission-goals {
+        padding: 4rem 0;
+    }
+
+    .vmg-card {
+        padding: 2rem;
+    }
+
+    .card-heading h3 {
+        font-size: 1.35rem;
+    }
+}
+
+/* ========================================= */
+/* Services Section – Advanced Care Theme */
+.our-services {
+    background-color: #F8FAFC;
+    /* نظافة واحتراف طبي */
+    color: #1E1E1E;
+    padding: 6rem 0;
+}
+
+/* Section heading */
+.section-heading {
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+.section-heading h2 {
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: #0078B7;
+    /* الأزرق الأساسي */
+    margin-bottom: 1rem;
+}
+
+.section-heading h2 span {
+    color: #00A8E8;
+    /* الأزرق الفاتح */
+}
+
+.section-heading .subtitle {
+    font-size: 1rem;
+    opacity: 0.85;
+    max-width: 720px;
+    margin: 0 auto;
+    line-height: 1.7;
+    color: #333;
+}
+
+.section-heading::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 3px;
+    background-color: #00A8E8;
+    margin: 1.2rem auto 0;
+    border-radius: 5px;
+}
+
+/* Service card */
+.service-card {
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 168, 232, 0.25);
+    border-radius: 12px;
+    padding: 2.5rem 1.8rem;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 120, 183, 0.08);
+}
+
+.service-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    border-color: rgba(0, 168, 232, 0.6);
+    box-shadow: 0 12px 28px rgba(0, 120, 183, 0.18);
+    transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
+}
+
+/* Service icon */
+.service-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(145deg, #00A8E8, #3BB273);
+    /* دمج الأزرق والأخضر الصحي */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.8rem;
+    box-shadow: 0 0 10px rgba(0, 168, 232, 0.3);
+    transition: all 0.35s ease;
+}
+
+.service-icon .bi {
+    font-size: 1.9rem;
+    color: #ffffff;
+}
+
+.service-card:hover .service-icon {
+    transform: scale(1.1);
+    box-shadow: 0 0 18px rgba(0, 168, 232, 0.5);
+}
+
+/* Card text */
+.service-card h3 {
+    font-size: 1.35rem;
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+    color: #0078B7;
+}
+
+.service-card p {
+    font-size: 0.98rem;
+    opacity: 0.9;
+    line-height: 1.7;
+    color: #333333;
+}
+
+/* Scroll animation */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s cubic-bezier(0.34, 1.56, 0.64, 1),
+        transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.animate-on-scroll.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+    .section-heading h2 {
+        font-size: 2.2rem;
+    }
+
+    .service-card {
+        padding: 2rem 1.5rem;
+    }
+
+    .service-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .service-icon .bi {
+        font-size: 1.7rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .our-services {
+        padding: 4rem 0;
+    }
+}
+
+
+/* ===========================
+   Get in Touch Section - Advanced Care
+   =========================== */
+.get-in-touch {
+    background-color: rgb(243, 243, 243);
+    color: #1E1E1E;
+    padding: 6rem 0;
+}
+
+/* Section Heading */
+.get-in-touch .section-heading {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.get-in-touch .section-heading h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.get-in-touch .section-heading h2 span {
+    color: #00A8E8;
+}
+
+.get-in-touch .section-heading .subtitle {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.05rem;
+    opacity: 0.85;
+    line-height: 1.7;
+}
+
+/* Contact Card */
+.contact-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 168, 232, 0.25);
+    border-radius: 10px;
+    padding: 1.5rem;
+    cursor: pointer;
+}
+
+.contact-card:hover {
+    border-color: #00A8E8;
+    transform: translateX(5px);
+    box-shadow: 0 4px 12px rgba(0, 168, 232, 0.25);
+    transition: all 0.35s ease;
+}
+
+.contact-card h4 {
+    color: #0078B7;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+}
+
+.contact-card p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+.contact-icon {
+    font-size: 1.8rem;
+}
+
+/* Form Styling */
+.contact-form .form-control {
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 168, 232, 0.25);
+    color: #1E1E1E;
+    padding: 0.75rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.contact-form .form-control:focus {
+    border-color: #00A8E8;
+    box-shadow: 0 0 8px rgba(0, 168, 232, 0.25);
+    background-color: #F0F8FB;
+    outline: none;
+}
+
+.form-control::placeholder {
+    color: rgba(30, 30, 30, 0.5);
+}
+
+/* Submit Button */
+.send-btn {
+    background: linear-gradient(135deg, #00A8E8, #3BB273);
+    color: #fff;
+    border: none;
+    padding: 0.9rem;
+    font-weight: 600;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.send-btn:hover {
+    background: linear-gradient(135deg, #0078B7, #2C9E66);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0, 168, 232, 0.3);
+    transition: all 0.3s ease;
+}
+
+/* Scroll Animation */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.animate-on-scroll.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 575px) {
+    .get-in-touch {
+        padding: 3rem 0;
+    }
+
+    .get-in-touch .section-heading h2 {
+        font-size: 2rem;
+    }
+}
+
+
+/* =========================================== */
+
+/* ===========================
+   Footer - Advanced Care
+=========================== */
+
+/* Footer layout */
+.footer-aura {
+    background-color: #005F8C;
+    color: #ffffff;
+    padding: 4rem 0 2rem;
+    position: relative;
+    border-top: 2px solid rgba(0, 168, 232, 0.3);
+    box-shadow: 0 -4px 25px rgba(0, 168, 232, 0.15);
+}
+
+/* Logo section */
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.footer-logo i {
+    font-size: 2rem;
+    color: #3BB273;
+}
+
+.logo-text {
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+/* Company short description */
+.tagline {
+    opacity: 0.85;
+    line-height: 1.6;
+    font-size: 0.96rem;
+    max-width: 280px;
+    color: #ffffff;
+}
+
+/* Footer headings */
+.footer-heading {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+/* Quick Links */
+.quick-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.quick-links li {
+    margin-bottom: 0.6rem;
+}
+
+.quick-links a {
+    color: #ffffff;
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+.quick-links a:hover {
+    opacity: 1;
+    color: #3BB273;
+    padding-left: 6px;
+    transition: all 0.3s ease;
+}
+
+/* Social icons */
+.social-links {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.social-icon {
+    width: 42px;
+    height: 42px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 1.1rem;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    background-color: #3BB273;
+    color: #ffffff;
+    transform: scale(1.12);
+    box-shadow: 0 0 15px rgba(0, 168, 232, 0.4);
+    transition: all 0.35s ease;
+}
+
+/* Copyright */
+footer .copyright p {
+    text-align: center;
+    margin-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 1.5rem;
+    opacity: 0.8;
+    font-size: 0.92rem;
+    color: #EAF2F7;
+}
+
+/* Scroll animation */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.animate-on-scroll.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer-aura {
+        padding: 3rem 0 1.5rem;
+    }
+
+    .footer-logo i {
+        font-size: 1.8rem;
+    }
+
+    .logo-text {
+        font-size: 1.4rem;
+    }
+
+    .social-icon {
+        width: 36px;
+        height: 36px;
+        font-size: 1rem;
+    }
+}
+
+
+
+/* ===========================
+   Loading Screen
+   =========================== */
+
+#loading-screen {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    transition: opacity 0.6s ease, visibility 0.6s ease;
+    background-color: #f2f2f2;
+}
+
+#loading-screen.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* Loader Style */
+.loader {
+    text-align: center;
+    color: #fff;
+}
+
+.loader img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    animation: spin 1.5s linear infinite;
+    margin-bottom: 10px;
+}
+
+.loader span {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Logo Rotation Animation */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

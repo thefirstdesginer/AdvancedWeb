@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Aura Steel</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Optional: Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Lottie Player -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100" tabindex="0">
+
+    <!-- ======= Loading Screen ======= -->
+    <div id="loading-screen">
+        <div class="loading-container">
+            <lottie-player src="assets/animations/loding.json" background="transparent" speed="1"
+                style="width: 300px; height: 300px;" loop autoplay></lottie-player>
+        </div>
+    </div>
+
+    <!-- ======= Header (Navigation Bar) ======= -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar shadow-sm" data-aos="fade-down">
+        <div class="container">
+
+            <!-- Logo + Company Name -->
+            <a class="navbar-brand fw-bold text-white d-flex align-items-center gap-2" href="#">
+                <!-- <img src="assets/Logo/Developed-Logo-2.png" alt="Logo" height="55"> -->
+                <div class="brand-text">
+                    <span>Advanced Care</span>
+                    <!-- <span data-i18n="nav.nameEst.1"></span> -->
+                </div>
+            </a>
+
+            <!-- Toggle Button (Mobile) -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav mb-2 mb-lg-0 gap-lg-3">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#VisionMission">Vision & Mission</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#GetinTouch">Get in Touch</a>
+                    </li>
+                    <li>
+                        <a href="" class="btn btn-outline-light rounded-pill ms-lg-3 px-4">
+                            Company Profile
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero" class="hero d-flex align-items-center">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- content -->
+                <div class="col-lg-6 order-2 order-lg-1 hero-content">
+                    <!-- <div class="tagline mb-3">
+                        <img src="assets/Logo/Aura-Steel-W.png" alt="Aura Logo" class="hero-logo">
+                    </div> -->
+
+                    <h1 class="display-4 fw-bold">
+                        Advancing the<br><span>Future</span> of Healthcare
+                    </h1>
+                    <p class="lead">
+                        Innovation, quality, and care — delivering world-class medical solutions that empower
+                        healthcare providers and improve patient lives.
+                    </p>
+                    <div class="d-flex flex-wrap gap-2 mt-3 Screen">
+                        <a href="#about" class="btn btn-info btn-lg shadow-sm"> Company Profile →</a>
+                        <a href="#services" class="btn btn-outline-info btn-lg">Our Services</a>
+                    </div>
+                </div>
+
+                <!-- image -->
+                <div class="col-lg-6 order-1 order-lg-2 hero-image">
+                    <!-- decorative img; also used as background in CSS for overlay effect -->
+                    <img src="assets/images/Hero.jpg" alt="Steel Factory Interior"
+                        class="img-fluid rounded-3 shadow-lg d-block mx-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: About Advanced Care -->
+    <section id="about" class="about-aura-steel">
+        <div class="container">
+            <!-- Section Heading -->
+            <div class="about-heading">
+                <h2>About <span>Advanced Care</span></h2>
+            </div>
+
+            <!-- Row: Image + "About Us" Text -->
+            <div class="row g-5 mb-5">
+                <!-- Image Column -->
+                <div class="col-md-6">
+                    <img src="assets/images/AboutUS.jpg" alt="Advanced Care Medical Company"
+                        class="aura-image animate-on-scroll" />
+                </div>
+
+                <!-- Text Column -->
+                <div class="col-md-6 our-story">
+                    <h3>About Us</h3>
+                    <p class="animate-on-scroll" style="transition-delay: 0.1s;">
+                        Advanced Care is a trusted medical company specializing in providing advanced healthcare
+                        solutions,
+                        medical equipment, and professional services aimed at improving patient outcomes and empowering
+                        healthcare providers.
+                        We are committed to innovation, quality, and accessibility in the medical field.
+                        We proudly serve hospitals, clinics, laboratories, and healthcare providers with world-class
+                        products and reliable services that comply with the highest international standards.
+                    </p>
+                    <p class="animate-on-scroll" style="transition-delay: 0.2s;">
+                        Our vision is to be a leading healthcare solutions provider that enhances quality of life
+                        through
+                        innovation and excellence. We aim to deliver cutting-edge medical technologies and services
+                        while
+                        ensuring quality, safety, and compliance with international healthcare standards.
+                    </p>
+                    <p class="animate-on-scroll" style="transition-delay: 0.3s;">
+                        With strong after-sales support, certified quality systems, and a proven record of innovation,
+                        Advanced Care continues to provide flexible, reliable, and effective medical solutions across
+                        the
+                        healthcare industry.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Row: Core Values Cards -->
+            <div class="row g-4">
+                <!-- Card: Quality -->
+                <div class="col-sm-6 col-md-3">
+                    <div class="value-card animate-on-scroll" style="transition-delay: 0.1s;">
+                        <i class="bi bi-heart-pulse"></i>
+                        <h4>Quality</h4>
+                        <p>Delivering world-class healthcare solutions that meet international standards.</p>
+                    </div>
+                </div>
+
+                <!-- Card: Innovation -->
+                <div class="col-sm-6 col-md-3">
+                    <div class="value-card animate-on-scroll" style="transition-delay: 0.2s;">
+                        <i class="bi bi-lightbulb"></i>
+                        <h4>Innovation</h4>
+                        <p>Introducing advanced medical technologies that empower healthcare providers.</p>
+                    </div>
+                </div>
+
+                <!-- Card: Integrity -->
+                <div class="col-sm-6 col-md-3">
+                    <div class="value-card animate-on-scroll" style="transition-delay: 0.3s;">
+                        <i class="bi bi-shield-check"></i>
+                        <h4>Integrity</h4>
+                        <p>Operating with transparency, ethics, and trust in every partnership.</p>
+                    </div>
+                </div>
+
+                <!-- Card: Teamwork -->
+                <div class="col-sm-6 col-md-3">
+                    <div class="value-card animate-on-scroll" style="transition-delay: 0.4s;">
+                        <i class="bi bi-people"></i>
+                        <h4>Teamwork</h4>
+                        <p>Collaborating to achieve excellence and ensure customer satisfaction.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Vision, Mission & Goals -->
+    <section id="VisionMission" class="vision-mission-goals">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Our Vision -->
+                <div class="col-12">
+                    <div class="vmg-card animate-on-scroll" style="transition-delay: 0.1s;">
+                        <div class="card-heading">
+                            <i class="bi bi-eye card-icon"></i>
+                            <h3>Our <span>Vision</span></h3>
+                        </div>
+                        <p>
+                            To be a leading healthcare solutions provider that enhances the quality of life through
+                            innovation and excellence. We aim to build trust and deliver value by setting new standards
+                            in medical technology, safety, and reliability across the healthcare industry.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Our Mission -->
+                <div class="col-12">
+                    <div class="vmg-card animate-on-scroll" style="transition-delay: 0.2s;">
+                        <div class="card-heading">
+                            <i class="bi bi-signpost card-icon"></i>
+                            <h3>Our <span>Mission</span></h3>
+                        </div>
+                        <p>
+                            To deliver cutting-edge medical technologies and professional healthcare services that
+                            ensure
+                            quality, safety, and compliance with international healthcare standards. We strive to
+                            empower
+                            healthcare providers through innovation, efficiency, and strong partnerships that enhance
+                            patient outcomes and support sustainable healthcare growth.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Our Goals -->
+                <div class="col-12">
+                    <div class="vmg-card animate-on-scroll" style="transition-delay: 0.3s;">
+                        <div class="card-heading">
+                            <i class="bi bi-bullseye card-icon"></i>
+                            <h3>Our <span>Goals</span></h3>
+                        </div>
+                        <p>
+                            At Advanced Care, our goals are centered on improving healthcare accessibility, advancing
+                            medical technologies, and maintaining the highest levels of quality and reliability.
+                            We aim to continuously expand our services, strengthen global partnerships, and deliver
+                            sustainable medical solutions that benefit both patients and healthcare professionals.
+                        </p>
+                        <p>
+                            Our ultimate goal is to contribute to a healthier world by providing trusted products,
+                            innovative solutions, and exceptional support that ensure long-term value and customer
+                            satisfaction.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Our Services -->
+    <section id="services" class="our-services">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h2>Our <span>Services</span></h2>
+                <p class="subtitle">
+                    We provide comprehensive healthcare solutions designed to meet the diverse needs of hospitals,
+                    clinics, laboratories, and healthcare professionals.
+                    Our services combine advanced technologies, trusted medical equipment, and expert support to
+                    enhance patient outcomes and operational efficiency.
+                </p>
+            </div>
+
+            <div class="row g-4 g-lg-5">
+
+                <!-- Medical Devices & Equipment -->
+                <div class="col-sm-6 col-md-4">
+                    <div class="service-card animate-on-scroll"
+                        style="--card-color: #06b6d4; --card-color-rgb: 6, 182, 212; transition-delay: 0.1s;">
+                        <div class="service-icon">
+                            <i class="bi bi-heart-pulse"></i>
+                        </div>
+                        <h3>Medical Devices & Equipment</h3>
+                        <p>
+                            High-quality diagnostic, surgical, and monitoring equipment that meets international
+                            healthcare standards.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Healthcare IT & Digital Solutions -->
+                <div class="col-sm-6 col-md-4">
+                    <div class="service-card animate-on-scroll"
+                        style="--card-color: #3b82f6; --card-color-rgb: 59, 130, 246; transition-delay: 0.2s;">
+                        <div class="service-icon">
+                            <i class="bi bi-cpu"></i>
+                        </div>
+                        <h3>Healthcare IT & Digital Solutions</h3>
+                        <p>
+                            Innovative digital tools and healthcare management systems that support smart, connected,
+                            and
+                            efficient medical operations.
+                        </p>
+                    </div>
+                </div>
+
+
+
+                <!-- Medical Consumables & Supplies -->
+                <div class="col-sm-6 col-md-4">
+                    <div class="service-card animate-on-scroll"
+                        style="--card-color: #d946ef; --card-color-rgb: 217, 70, 239; transition-delay: 0.4s;">
+                        <div class="service-icon">
+                            <i class="bi bi-box-seam"></i>
+                        </div>
+                        <h3>Medical Consumables & Supplies</h3>
+                        <p>
+                            A wide range of medical consumables and supplies that ensure safety, hygiene, and consistent
+                            patient care.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Home Healthcare Solutions -->
+                <div class="col-sm-6 col-md-4">
+                    <div class="service-card animate-on-scroll"
+                        style="--card-color: #ec4899; --card-color-rgb: 236, 72, 153; transition-delay: 0.5s;">
+                        <div class="service-icon">
+                            <i class="bi bi-house-heart"></i>
+                        </div>
+                        <h3>Home Healthcare Solutions</h3>
+                        <p>
+                            Personalized home healthcare systems and devices that provide comfort, safety, and
+                            continuous
+                            monitoring for patients.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Healthcare Consulting & Support -->
+                <div class="col-sm-6 col-md-4">
+                    <div class="service-card animate-on-scroll"
+                        style="--card-color: #10b981; --card-color-rgb: 16, 185, 129; transition-delay: 0.6s;">
+                        <div class="service-icon">
+                            <i class="bi bi-people-fill"></i>
+                        </div>
+                        <h3>Healthcare Consulting & Support</h3>
+                        <p>
+                            Professional consulting and after-sales support services to help healthcare providers
+                            enhance
+                            efficiency and patient satisfaction.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Cosmetic & Skincare -->
+                <div class="col-sm-6 col-md-4">
+                    <div class="service-card animate-on-scroll"
+                        style="--card-color: #f97316; --card-color-rgb: 249, 115, 22; transition-delay: 0.7s;">
+                        <div class="service-icon">
+                            <i class="bi bi-droplet-half"></i>
+                        </div>
+                        <h3>Cosmetic & Skincare</h3>
+                        <p>
+                            Advanced cosmetic and skincare products developed using medical-grade formulas to promote
+                            wellness and beauty.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--  Get in Touch Section  -->
+    <section id="GetinTouch" class="get-in-touch">
+        <div class="container">
+            <!-- Section Heading -->
+            <div class="section-heading text-center">
+                <h2>Get in <span>Touch</span></h2>
+                <p class="subtitle">
+                    Have a question or need more information about our healthcare solutions?
+                    Contact <strong>Advanced Care</strong> today — our team is ready to assist you
+                    with expert guidance and professional support.
+                </p>
+            </div>
+
+            <!-- Row: Contact Info + Form -->
+            <div class="row g-5 align-items-start">
+                <!-- Left Column: Contact Info -->
+                <div class="col-lg-5">
+                    <!-- Phone Numbers -->
+                    <div class="contact-card animate-on-scroll" style="transition-delay: 0.1s;">
+                        <i class="bi bi-telephone contact-icon"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>
+                                0540369306<br>
+                                0548078435<br>
+                                0508562504<br>
+                                0542420429
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="contact-card animate-on-scroll mt-3" style="transition-delay: 0.3s;">
+                        <i class="bi bi-envelope contact-icon"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@sdc-sa.net</p>
+                        </div>
+                    </div>
+
+                    <!-- Location -->
+                    <div class="contact-card animate-on-scroll mt-3" style="transition-delay: 0.2s;">
+                        <i class="bi bi-geo-alt contact-icon"></i>
+                        <div>
+                            <h4>Address</h4>
+                            <p>Al Adamah, St. 122, Bldg. 3568, Dammam, Saudi Arabia</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Contact Form -->
+                <div class="col-lg-7">
+                    <form class="contact-form">
+                        <!-- Name -->
+                        <div class="mb-3">
+                            <label class="form-label">Name</label>
+                            <input type="text" class="form-control animate-on-scroll" placeholder="Your name">
+                        </div>
+
+                        <!-- Email -->
+                        <div class="mb-3">
+                            <label class="form-label">Email</label>
+                            <input type="email" class="form-control animate-on-scroll"
+                                placeholder="your.email@example.com">
+                        </div>
+
+                        <!-- Phone -->
+                        <div class="mb-3">
+                            <label class="form-label">Phone</label>
+                            <input type="tel" class="form-control animate-on-scroll" placeholder="+966 XX XXX XXXX">
+                        </div>
+
+                        <!-- Message -->
+                        <div class="mb-4">
+                            <label class="form-label">Message</label>
+                            <textarea class="form-control animate-on-scroll" rows="4"
+                                placeholder="Write your message here..."></textarea>
+                        </div>
+
+                        <!-- Send Button -->
+                        <button type="submit" class="send-btn w-100 animate-on-scroll">
+                            Send Message <i class="bi bi-send"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer-aura">
+        <div class="container">
+            <div class="row g-5">
+                <!-- Logo + Company Description -->
+                <div class="col-md-4 animate-on-scroll" style="transition-delay: 0.1s;">
+                    <div class="footer-logo">
+                        <!-- 📌 استبدل الأيقونة هذه بشعار Advanced Care الفعلي -->
+                        <i class="bi bi-heart-pulse-fill"></i>
+                        <span class="logo-text">Advanced Care</span>
+                    </div>
+                    <p class="tagline mt-3">
+                        A trusted medical company providing advanced healthcare solutions, equipment, and professional
+                        services — committed to innovation, quality, and accessibility in healthcare.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-md-4 animate-on-scroll" style="transition-delay: 0.2s;">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="quick-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#VisionMission">Vision & Mission</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#GetinTouch">Get in Touch</a></li>
+                    </ul>
+                </div>
+
+                <!-- Follow Us (Social Media) -->
+                <div class="col-md-4 animate-on-scroll" style="transition-delay: 0.3s;">
+                    <h4 class="footer-heading">Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="copyright mt-5 pt-4 animate-on-scroll" style="transition-delay: 0.4s;">
+                <p>© 2025 Advanced Care. All rights reserved.</p>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+
+    <!-- // Loading Screen -->
+    <script>
+        window.addEventListener('load', function () {
+            const loadingScreen = document.getElementById('loading-screen');
+            loadingScreen.classList.add('loaded');
+
+            setTimeout(function () {
+                loadingScreen.style.display = 'none';
+            }, 500);
+        });
+    </script>
+</body>
+
+</html>
