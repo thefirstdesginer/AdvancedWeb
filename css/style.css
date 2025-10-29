@@ -89,7 +89,7 @@ body {
     bottom: -4px;
     width: 0%;
     height: 2px;
-    background-color: #3BB273;
+    background-color: #fdba17;
     /* Healthcare green accent */
     transition: width 0.3s;
 }
@@ -168,7 +168,7 @@ body {
 }
 
 .hero-content h1 span {
-    color: #3BB273;
+    color: #fdba17;
 }
 
 .hero-image img {
@@ -243,7 +243,7 @@ body {
 }
 
 .about-heading h2 span {
-    color: #3BB273;
+    color: #fdba17;
     /* Healthcare Green */
 }
 
@@ -302,7 +302,7 @@ body {
 
 .value-card .bi {
     font-size: 2.2rem;
-    color: #3BB273;
+    color: #fdba17;
     /* Green accent for icons */
     margin-bottom: 1.2rem;
 }
@@ -391,7 +391,7 @@ body {
 }
 
 .card-icon {
-    color: #3BB273;
+    color: #fdba17;
     /* Green healthcare accent */
     font-size: 1.8rem;
     margin-right: 0.8rem;
@@ -514,7 +514,7 @@ body {
 .service-icon {
     width: 70px;
     height: 70px;
-    background: linear-gradient(145deg, #00A8E8, #3BB273);
+    background: linear-gradient(145deg, #00A8E8, #fdba17);
     /* دمج الأزرق والأخضر الصحي */
     border-radius: 50%;
     display: flex;
@@ -679,7 +679,7 @@ body {
 
 /* Submit Button */
 .send-btn {
-    background: linear-gradient(135deg, #00A8E8, #3BB273);
+    background: linear-gradient(135deg, #00A8E8, #fdba17);
     color: #fff;
     border: none;
     padding: 0.9rem;
@@ -744,7 +744,7 @@ body {
 
 .footer-logo i {
     font-size: 2rem;
-    color: #3BB273;
+    color: #fdba17;
 }
 
 .logo-text {
@@ -789,7 +789,7 @@ body {
 
 .quick-links a:hover {
     opacity: 1;
-    color: #3BB273;
+    color: #fdba17;
     padding-left: 6px;
     transition: all 0.3s ease;
 }
@@ -815,7 +815,7 @@ body {
 }
 
 .social-icon:hover {
-    background-color: #3BB273;
+    background-color: #fdba17;
     color: #ffffff;
     transform: scale(1.12);
     box-shadow: 0 0 15px rgba(0, 168, 232, 0.4);
